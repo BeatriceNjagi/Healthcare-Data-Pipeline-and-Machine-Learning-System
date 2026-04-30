@@ -7,19 +7,31 @@ An end-to-end ML system that predicts patient test results as **Normal**, **Abno
 ## Project Structure
 
 ```
-healthcare-analytics/
-├── retrain_dag.py       # Airflow DAG - retrains every Saturday 12:00 noon
-├── models/                  # Saved model files (generated after training)
-├── healthcare_dataset.csv
-├── main.py              # FastAPI prediction endpoint
-├── clean.py                 # Data cleaning and transformation
-├── database.py              # PostgreSQL connection and data loading
-├── train.py                 # Model training and evaluation
-├── pyproject.toml           # uv project dependencies
-├── requirements.txt         # For deployment on Render
-├── .env.example             # Environment variable template
+Healthcare-Data-Pipeline-and-Machine-Learning-System/
+├── api/
+│   └── main.py              
+│
+├── data/
+│   └── healthcare_dataset.csv
+│
+├── models/
+│   ├── best_model.joblib
+│   ├── scaler.joblib
+│   ├── encoders.joblib
+│   ├── feature_columns.joblib
+│   └── .gitkeep
+│
+├── src/
+│   ├── clean.py             # Data cleaning & preprocessing
+│   ├── database.py          # PostgreSQL connection & ingestion
+│   ├── train.py             # Model training
+│   └── retrain_dag.py       # Airflow DAG
+│
+├── requirements.txt         # Render dependencies
+├── pyproject.toml           # uv/local dev dependencies
+├── .env.example             # Env template
+├── .gitignore
 └── README.md
-```
 
 ---
 
