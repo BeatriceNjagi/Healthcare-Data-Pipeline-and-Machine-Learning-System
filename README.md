@@ -161,7 +161,6 @@ password:in the simple_auth_manager_passwords file
 | Model | Description |
 |---|---|
 | Logistic Regression | Simple baseline linear model |
-| Random Forest | Ensemble of 100 decision trees |
 | XGBoost | Gradient boosted trees (usually best) |
 
 Evaluation metrics: Accuracy, Precision, Recall, F1-Score, Confusion Matrix.
