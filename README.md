@@ -32,12 +32,13 @@ Healthcare-Data-Pipeline-and-Machine-Learning-System/
 ├── .env.example             # Env template
 ├── .gitignore
 └── README.md
-
+```
 ---
 
 ## Setup Instructions
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/BeatriceNjagi/Healthcare-Data-Pipeline-and-Machine-Learning-System
 cd Healthcare-Data-Pipeline-and-Machine-Learning-System
